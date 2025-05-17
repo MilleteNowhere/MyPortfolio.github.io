@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="WebsiteStyle.css" type="text/css"/>
+    <title>Contact Me</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const loadingScreen = document.getElementById("Load");
+        const mainContent = document.getElementById("content");
+
+        // Wait for the fade-out animation to complete
+        setTimeout(() => {
+        loadingScreen.style.display = "none"; // Hide the loading screen
+        mainContent.style.display = "block"; // Show the main content
+            }, 1700); // Matches the total duration of the fade-out animation (2s delay + 1s animation)
+        });
+    </script>
+</head>
+<body class="bg">
+    <img
+      src="Images/Clash.gif"
+      width="10000"
+      height="10000"
+      alt="CLASH"
+      id="Load"
+    />
+
+    <ul>
+        <li><a href="About.html">Genesis</a></li>
+        <li><a href="Contact.html">Contacts</a></li>
+        <a href="index.html"><img src="https://i.imgur.com/sgJNGwt.png" alt="Home" style="width: 150px; height: auto;"></a>
+        <li><a href="Animator.html">Animator</a></li>
+        <li><a href="VoiceActor.html">Voice Actor</a></li>
+    </ul>
+
+    <div class="ContactInfo">
+        <p>
+            Interested in my work? <br>
+            If so, feel free to contact me for a request. I'm happy to assist!
+            <img src="Images/Red.png" id= "Red-Contacts">
+        </p>
+    </div>  
+    
+    <div class="ContactInfo">
+            <p>Andrew.Millete@gmail.com </p>
+            <a href="https://discordapp.com/"><img src="Images/Discord.png" class="Contacts"></a>
+            <a href="https://www.instagram.com/nowhere.va/"><img src="Images/Instagram.png" class="Contacts"></a>
+            <img src="Images/clash.png" id="ClashContact">
+    </div>
+</body>
+</html>
